@@ -28,3 +28,18 @@ let copy = moreNames;
 moreNames.append("baz")
 moreNames
 copy
+
+
+//you can use reference types by in swift
+let someNames = NSMutableArray(
+    array: [
+        "foo",
+        "bar"
+    ]
+)
+func changeTheArray(_ array: NSArray) {
+    let copy = array as! NSMutableArray;
+    copy.add("baz");
+}
+changeTheArray(someNames)
+someNames;
