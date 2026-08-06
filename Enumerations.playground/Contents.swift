@@ -24,7 +24,6 @@ func describeAnimal(_ animal: Animals) {
 describeAnimal(Animals.cat)
 
 
-
 // shortcut
 enum Shortcut {
     case fileOrFolder(path: URL, name: String)
@@ -72,7 +71,7 @@ if case let .wwwUrl(path) = wwwApple {
 //
 let withoutYou = Shortcut.song(
     artist: "Symphony X",
-    songName: "whithout you"
+    songName: "without you"
 )
 
 if case let .song(_, songName) = withoutYou {
@@ -165,3 +164,4 @@ indirect enum IntOperation {
 
 let freeHand = IntOperation.freeHand(.add(2, 3))
 freeHand.calculateResult()
+print("hello")
