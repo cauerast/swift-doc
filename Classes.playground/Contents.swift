@@ -123,5 +123,3 @@ let myClosure = {
 
 myClosure()
 
-
-
